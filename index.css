@@ -1,0 +1,27 @@
+section {
+  position: relative;
+}
+.tooltip {
+  visibility: hidden;
+  background-color: grey;
+  color: white;
+  padding: 5px 10px;
+  position: absolute;
+  top: -25px;
+  left: 30px;
+  border-radius: 7px;
+}
+.tooltip:after {
+  max-width: 200px;
+  top: 28px;
+  left: 15px;
+  line-height: 20px;
+  content: '';
+  position: absolute;
+  border: 5px solid grey;
+  color: grey;
+  border-color: grey transparent transparent transparent;
+}
+section:hover .tooltip {
+  visibility: visible;
+}
